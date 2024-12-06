@@ -10,7 +10,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/jennyncodes/kanbas-node-server-app.git"
+    "url": "git+https://github.com/jennyncodes/cs-5610-server"
   },
   "keywords": [
     "Node",
@@ -24,9 +24,9 @@
   "author": "Jenny Nguyen",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/jennyncodes/kanbas-node-server-app/issues"
+    "url": "https://github.com/jennyncodes/cs-5610-server/issues"
   },
-  "homepage": "https://github.com/jennyncodes/kanbas-node-server-app#readme",
+  "homepage": "https://github.com/jennyncodes/cs-5610-server#readme",
   "dependencies": {
     "axios": "^1.7.8",
     "cors": "^2.8.5",
