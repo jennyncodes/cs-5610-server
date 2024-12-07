@@ -1,7 +1,7 @@
 import model from "./model.js";
 
 export function findQuizzesForCourse(courseId) {
-  return model.find({ course: courseId });
+  return model.find({ course: courseId }).populate("quiz");
 }
 
 export function updateQuiz(quizId, quizUpdates) {
@@ -18,6 +18,9 @@ export function createQuiz(quiz) {
  return model.create(quiz);
 }
 
+export function findAllQuizzes() {
+    return model.find();
+  }
 
 
 

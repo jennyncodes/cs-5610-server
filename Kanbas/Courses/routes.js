@@ -82,6 +82,16 @@ app.get("/api/courses/:courseId/quizzes", async (req, res) => {
   const quizzes = await quizzesDao.findQuizzesForCourse(courseId);
   res.json(quizzes);
 });
+
+app.post("/api/courses/:courseId/quizzes", async (req, res) => {
+  const { courseId } = req.params;
+  const quiz = {
+    ...req.body,
+    course: courseId,
+  };
+  const newQuiz = await quizzesDao.createQuiz(quiz);
+  res.send(newQuiz);
+});
  
 
 }
