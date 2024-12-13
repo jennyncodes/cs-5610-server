@@ -26,6 +26,7 @@ const quizSchema = new mongoose.Schema({
     webcam: String,
     lock_questions: String,
     dueDate:  Date,
+    availability: String,
     available:  Date,
     availableUntil:  Date,
 

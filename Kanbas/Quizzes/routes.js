@@ -1,5 +1,6 @@
 import * as quizzesDao from "./dao.js";
-export default function ModuleRoutes(app) {
+
+export default function QuizRoutes(app) {
 
   app.put("/api/quizzes/:quizId", async (req, res) => {
     const { quizId } = req.params;
