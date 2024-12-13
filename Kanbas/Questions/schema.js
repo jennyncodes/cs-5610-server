@@ -1,6 +1,6 @@
 import mongoose from "mongoose";
 
-const quizSchema = new mongoose.Schema({
+const questionSchema = new mongoose.Schema({
     course: { type: mongoose.Schema.Types.ObjectId, ref: "CourseModel" },
     quiz: {type: mongoose.Schema.Types.ObjectId, ref: "QuizModel"},
     title: String,
@@ -46,6 +46,6 @@ const quizSchema = new mongoose.Schema({
     },
 ],
 },
-  { collection: "quizzes" }
+  { collection: "questions" }
 );
-export default quizSchema;
+export default questionSchema;
