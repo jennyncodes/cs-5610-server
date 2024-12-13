@@ -7,9 +7,9 @@ const questionSchema = new mongoose.Schema({
             enum: ["MC", "TF", "FB"],
         },
         title: String,
-        question: { type: String}, 
-        answers: { type: [String] },
-        correct_answer: { type: String }, 
+        question_text: { type: String}, 
+        answer: { type: [String] },
+        options: { type: [String] }, 
         points: { type: Number},
        
     },
